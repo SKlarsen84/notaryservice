@@ -37,7 +37,7 @@ All file hashes are generated locally and stored on the concordium blockchain.
 
 ##### Building
 
-1.  create an .env file with the following variables:
+1.  update the backend/.env file with the following variables:
 
 - `SENDER_ACCOUNT` - the address to perform the registerData transaction which notarizes the file.
 - `ACCOUNT_SIGN_KEY` - signkey for the sender account
