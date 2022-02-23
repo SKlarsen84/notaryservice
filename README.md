@@ -37,14 +37,24 @@ All file hashes are generated locally and stored on the concordium blockchain.
 
 ##### Building
 
-1.  update the backend/.env file with the following variables:
+1.  create a backend/.env file with the following variables:
 
 - `SENDER_ACCOUNT` - the address to perform the registerData transaction which notarizes the file.
 - `ACCOUNT_SIGN_KEY` - signkey for the sender account
-- `PORT` - port you wish to run the backend on
-- `NODE_ADDRESS` - ip/hostname of the machine running your concordium node . E.g. 'concordiumwalletnode.com'
+- `PORT` - port you wish to run the backend on, e.g "3000"
+- `NODE_ADDRESS` - ip/hostname of the machine running your concordium node . E.g. "concordiumwalletnode.com"
 
-The SignKey can be found by exporting your wallet, decrypting it via Concordiums official auxilliary tools (https://developer.concordium.software/en/mainnet/net/references/developer-tools.html) and locating the SignKey value for your chosen account. _Note that this will expose your wallet keys during use, so act accordingly and exercise due dilligence_ 2. `npm i` 3. `npm run start` to start
+For example:
+
+> PORT="3000"\
+> NODE_ADDRESS="concordiumwalletnode.com"\
+> SENDER_ACCOUNT="\<your concordium wallet address\>"\
+> ACCOUNT_SIGN_KEY="\<your concordium wallet address' signkey\>"\
+
+The SignKey can be found by exporting your wallet, decrypting it via Concordiums official auxilliary tools (https://developer.concordium.software/en/mainnet/net/references/developer-tools.html) and locating the SignKey value for your chosen account. _Note that this will expose your wallet keys during use, so act accordingly and exercise due dilligence_
+
+2.  `npm i`
+3.  `npm run start` to start
 
 ## License
 
