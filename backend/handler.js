@@ -10,6 +10,7 @@ import {
 } from "@concordium/node-sdk";
 import { Buffer } from "buffer/index.js";
 import { credentials, Metadata } from "@grpc/grpc-js";
+import { PeerListResponse } from "@concordium/node-sdk/lib/grpc/concordium_p2p_rpc_pb";
 
 function getNodeClient() {
   const metadata = new Metadata();
@@ -71,4 +72,17 @@ export const createDataTransfer = async (req) => {
   );
 
   return { result: result, tx: transactionHash };
+};
+
+export const lookupTransaction = async (tx) => {
+  //hijack the bigint prototype to allow for serialization
+  BigInt.prototype.toJSON = function () {
+    return this.toString();
+  };
+  const client = getNodeClient();
+  const transactionHash = tx;
+  const transactionStatus = await client.getTransactionStatus(transactionHash);
+  const transactionBlockHash = Object.keys(transactionStatus.outcomes)[0];
+  const blockInfo = await client.getBlockInfo(transactionBlockHash);
+  return {tx: tx, time: blockInfo.blockSlotTime};
 };
