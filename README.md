@@ -47,7 +47,7 @@ All file hashes are generated locally and stored on the concordium blockchain.
 For example:
 
 > PORT="3000"\
-> NODE_ADDRESS="concordiumwalletnode.com"\
+> NODE_ADDRESS="127.0.0.1"\
 > SENDER_ACCOUNT="\<your concordium wallet address\>"\
 > ACCOUNT_SIGN_KEY="\<your concordium wallet address' signkey\>"\
 
