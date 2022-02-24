@@ -43,6 +43,20 @@ export const InputContainer = styled.div`
   width: 100%;
 `
 
+export const Footer = styled.div`
+  display: flex;
+  background: #DBDBDB;
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  height: 45px;
+  color: #000000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size:9px;
+`
 export const FileUploaderDiv = styled.div`
   border: dashed 1px #DDDDDD;
   width: 290px;
@@ -64,7 +78,7 @@ export const ButtonContainer = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 0;
+  bottom: 33px;
 `
 
 export const HorizontalRule = styled.hr`

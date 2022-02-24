@@ -1,5 +1,6 @@
 import FindInPageIcon from "@mui/icons-material/FindInPage";
 import GavelIcon from "@mui/icons-material/Gavel";
+import { Typography } from "@mui/material";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import React, { useEffect } from "react";
@@ -7,6 +8,7 @@ import { SetStateAction, useState } from "react";
 
 import { CheckFiles } from "./CheckFiles";
 import {
+  Footer,
   HorizontalRule,
   InputContainer,
   MainContainer,
@@ -63,6 +65,11 @@ export const Landing = () => {
           <CheckFiles endpoint={endpoint} />
         )}
       </div>
+      <Footer>
+        <Typography variant="caption">
+          Powered by <a href="concordium.com">concordium</a>
+        </Typography>
+      </Footer>
     </MainContainer>
   );
 };
