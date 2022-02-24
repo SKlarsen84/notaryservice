@@ -58,7 +58,7 @@ export const CheckFiles: FunctionComponent<Props> = ({ endpoint }) => {
         placeholder='tx hash'
         value={txHash}
         onChange={handleChange}
-        style={{ width: 300, fontSize: 10 }}
+        style={{ width: 280, fontSize: 10 }}
       />
       <div style={{ width: '80%', height: 180, marginTop: 15, overflow: 'auto', textAlign: 'center' }}>
         {result && (

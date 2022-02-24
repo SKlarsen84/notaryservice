@@ -1,6 +1,6 @@
 import FindInPageIcon from "@mui/icons-material/FindInPage";
 import GavelIcon from "@mui/icons-material/Gavel";
-import { Typography } from "@mui/material";
+import { Link, Typography } from "@mui/material";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import React, { useEffect } from "react";
@@ -67,7 +67,7 @@ export const Landing = () => {
       </div>
       <Footer>
         <Typography variant="caption">
-          Powered by <a href="concordium.com">concordium</a>
+          Powered by <Link>concordium</Link> 
         </Typography>
       </Footer>
     </MainContainer>

@@ -59,7 +59,7 @@ export const Footer = styled.div`
 `
 export const FileUploaderDiv = styled.div`
   border: dashed 1px #DDDDDD;
-  width: 290px;
+  width: 270px;
   height: 47px;
   padding: 3px;
   padding-top: 19px;
