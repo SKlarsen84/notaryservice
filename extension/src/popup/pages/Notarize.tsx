@@ -86,7 +86,7 @@ export const Notarize: FunctionComponent<Props> = ({ endpoint }) => {
 
   return (
     <InputContainer style={{ marginTop: 25 }}>
-      {resultList.length === 0 && <FileUploader multiple={true} handleChange={handleChange} name='file' />}
+      {resultList.length === 0 && <FileUploader multiple={true} handleChange={handleChange} name='file' style={{minWidth: 0}}/>}
 
       <div style={{ width: '80%', height: 180, marginTop: 15, overflow: 'auto' }}>
         {resultList.length === 0 && hashList.map(hash => <div key={hash.hash}>📝 {hash.name}</div>)}
