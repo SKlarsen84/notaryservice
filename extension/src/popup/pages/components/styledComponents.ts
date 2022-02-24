@@ -43,6 +43,20 @@ export const InputContainer = styled.div`
   width: 100%;
 `
 
+export const FileUploaderDiv = styled.div`
+  border: dashed 1px #DDDDDD;
+  width: 290px;
+  height: 47px;
+  padding: 3px;
+  padding-top: 19px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 20px;
+  cursor: pointer;
+
+`
+
+
 export const ButtonContainer = styled.div`
   margin: 1rem 0 2rem 0;
   width: 100%;

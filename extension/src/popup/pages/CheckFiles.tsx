@@ -94,7 +94,7 @@ export const CheckFiles: FunctionComponent<Props> = ({ endpoint }) => {
 
       {txHash.length > 0 && (
         <ButtonContainer>
-          <Button onClick={checkTransaction}>Look up transaction</Button>
+          <Button variant="outlined" color="info" onClick={checkTransaction}>Look up transaction</Button>
         </ButtonContainer>
       )}
     </InputContainer>
