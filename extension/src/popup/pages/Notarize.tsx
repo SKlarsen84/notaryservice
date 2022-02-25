@@ -75,7 +75,7 @@ export const Notarize: FunctionComponent<Props> = ({ endpoint }) => {
   }, [fileList]);
 
   const notarizeFiles = async () => {
-    const notaryUrl = endpoint + "/notaryService";
+    const notaryUrl = endpoint + "/sendnotarytransaction";
     const finalResultArray: Result[] = [];
     for (const file of hashList) {
       try {

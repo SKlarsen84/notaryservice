@@ -45,7 +45,7 @@ export const CheckFiles: FunctionComponent<Props> = ({ endpoint }) => {
   }
 
   const checkTransaction = async () => {
-    const endpointURL = endpoint + '/txLookup'
+    const endpointURL = endpoint + '/transactionlookup'
     const result = await axios.default.post(endpointURL, { tx: txHash })
     const data = result.data as Result
     setResult(data)

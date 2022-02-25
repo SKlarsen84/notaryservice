@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(cors())
 
 //
-app.post('/notaryService', async (req, res, next) => {
+app.post('/sendnotarytransaction', async (req, res, next) => {
   const { hash, name } = req.body
   const transactionResult = await createDataTransfer(req.body)
   const outcome = transactionResult.result ? `${transactionResult.tx} ` : 'Notary transaction failed'
@@ -25,7 +25,7 @@ app.post('/notaryService', async (req, res, next) => {
   })
 })
 
-app.post('/txLookup', async (req, res, next) => {
+app.post('/transactionlookup', async (req, res, next) => {
   const lookupResult = await lookupTransaction(req.body.tx)
   res.json(lookupResult)
 })

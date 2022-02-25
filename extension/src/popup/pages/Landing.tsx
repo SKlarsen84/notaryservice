@@ -26,7 +26,7 @@ export const Landing = () => {
         URL: "",
       },
       async function (item) {
-        const url = item.URL.length > 0 ? item.URL : "http://127.0.0.1:3000";
+        const url = item.URL.length > 0 ? item.URL : "https://ns-weu-concordium-notary.azurewebsites.net/api";
         setEndpoint(url);
       }
     );

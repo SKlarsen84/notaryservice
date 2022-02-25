@@ -31,7 +31,8 @@ All file hashes are generated locally and stored on the concordium blockchain.
 1.  Complete the steps to build the project above
 2.  Go to [_chrome://extensions_](chrome://extensions) in Google Chrome
 3.  With the developer mode checkbox ticked, click **Load unpacked extension...** and select the _dist_ folder from this repo
-4.  Having installed the extension, go to addon details -> preferences and set the notary endpoint to your notary service backend (e.g http://127.0.0.1:3000/notaryService)
+4.  Having installed the extension, go to addon details -> preferences and set the notary endpoint to your notary service backend (e.g http://127.0.0.1:3000/notaryService). Alternatively, the 
+extension defaults to using a public notary endpoint at https://ns-weu-concordium-notary.azurewebsites.net/api if no url string is added in options. This means that you can run the extension without having to host a backend and node.
 
 ## Express backend:
 
