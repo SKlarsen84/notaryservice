@@ -5,10 +5,12 @@
 Open source chrome extension that lets you notarize/verify any file directly from your browser.
 All file hashes are generated locally and stored on the concordium blockchain.
 
+A full version is running at [notary.northstake.dk](https://notary.northstake.dk)
+
 ## Features
 
 - Drag/drop any file to the extension to notarize its SHA(256) checksum on the Concordium blockchain
-- Drag/drop any file to the extension to check whether it has been notarized on the Concordium blockchain at any point
+- Check transaction hashes to see when a given transaction was notarized.
 - Includes nodeJS/Express backend for hosting your own backend endpoint
 
 ## Tech
